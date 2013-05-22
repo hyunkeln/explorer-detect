@@ -20,7 +20,6 @@
 	$imagenTrackConIE="<img height='1' width='1' src='http://view.atdmt.com/action/Galerias_ConIE'/>";
 	$imagenTrackSinIE="<img height='1' width='1' src='http://view.atdmt.com/action/Galerias_SinIE'/>";
 	$detected = explorerDetect();
-	print_r($detected);
 	if($detected["os"]!="Windows"){
 		echo "Usa tu compu con windows para ver este contenido $imagenTrackSinIE"; //No es windows
 	}else{
