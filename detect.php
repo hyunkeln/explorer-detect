@@ -1,4 +1,3 @@
-<pre>
 <?php
 	function explorerDetect(){
 		$browser = array();
@@ -6,14 +5,8 @@
 		$browser["os_version"]="6.2";
 		$browser["name"]="Explorer";
 		$browser["version"]="10";
-		
-		//print_r($_SERVER['HTTP_USER_AGENT']);
 		preg_match('/MSIE (.*?);/', $_SERVER['HTTP_USER_AGENT'], $explorer);
 		preg_match('/Windows NT (.*?);/', $_SERVER['HTTP_USER_AGENT'], $windows);
-		/*print_r($windows);
-		print_r($explorer);*/
-		
-		
 		if (count($windows)>1){
 		  if(count($explorer)>1) {
 		  	$browser["version"]=$explorer[1];
@@ -41,4 +34,3 @@
 	}
 	
 ?>
-</pre>
